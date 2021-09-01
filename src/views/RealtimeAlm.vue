@@ -267,67 +267,7 @@ export default {
 		],
 		datas: [],
 		tmp_alm_datas: [],
-		a_items: [
-			{  id: 1, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 0, gname: 'BOX1', pname: '인터페이스 다운' 
-				, box_info: {
-					id: '1',
-					bname: 'BOX1',
-					model: 'Neobox_M106a',
-					img: 'XIOS FW V2.1(r32473)',
-					ip: '172.31.13.232',
-					serial: 'M106-a-L1707-0110',
-					lan: '40.0.0.1',
-					time: '68일 0시간 27분 59초',
-					snmp_ver: '2c',
-					snmp_com: '68일 0시간 27분 59초',
-
-					pname: 'grp_2_grp',
-					bch: 'bch_2',
-					code: '-',
-					tel1: '-',
-					tel2: '-',
-					addr: '부산광역시 수영구 광안로49번길 74',
-					name: '-',
-					email: '-',
-					date: '2021-01-25 14:07:03',
-				},
-			},
-			{  id: 2, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 1, gname: 'Larsen', pname: '모든 인터페이스 다운' , box_info: {} },
-			{  id: 3, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 2, gname: 'Geneva', pname: '터널 다운' },
-			{  id: 4, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 3, gname: 'Dickerson', pname: 'CPU 임계치 초과' , box_info: {} },
-			{  id: 5, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 4, gname: 'Larsen', pname: 'Memory 임계치 초과' , box_info: {} },
-			{  id: 6, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 5, gname: 'Geneva', pname: 'Session 임계치 초과' , box_info: {} },
-			{  id: 7, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 6, gname: 'Dickerson', pname: '입력 트래픽 임계치초과' , box_info: {} },
-			{  id: 8, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 7, gname: 'Larsen', pname: '출력 트래픽 임계치 초과' , box_info: {} },
-			{  id: 9, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 8, gname: 'Geneva', pname: '동작환경 검사' , box_info: {} },
-			{ id: 10, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 9, gname: 'Dickerson', pname: '터널 백업 동작' , box_info: {} },
-			{ id: 11, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 10, gname: 'Larsen', pname: '포트 다운' , box_info: {} },
-			{ id: 12, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 0, gname: 'Geneva', pname: '인터페이스 다운' , box_info: {} },
-			{ id: 13, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 1, gname: 'Dickerson', pname: '모든 인터페이스 다운' , box_info: {} },
-			{ id: 14, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 2, gname: 'Larsen', pname: '터널 다운' , box_info: {} },
-			{ id: 15, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 3, gname: 'Geneva', pname: 'CPU 임계치 초과' , box_info: {} },
-			{ id: 16, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 4, gname: 'Dickerson', pname: 'Memory 임계치 초과' , box_info: {} },
-			{ id: 17, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 5, gname: 'Larsen', pname: 'Session 임계치 초과' , box_info: {} },
-			{ id: 18, status_text: "복구", status: 2, sdate: '2020-02-05', odate: '2020-02-05', code: 6, gname: 'Geneva', pname: '임력 트래픽 임계치 초과' , box_info: {} },
-			{ id: 19, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 7, gname: 'Dickerson', pname: '출력 트래픽 임계치 초과' , box_info: {} },
-			{ id: 20, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 8, gname: 'Larsen', pname: '동작환경 검사' , box_info: {} },
-			{ id: 21, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 9, gname: 'Geneva', pname: '터널 백업 동작' , box_info: {} },
-			{ id: 22, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 10, gname: 'Dickerson', pname: '포트 다운' , box_info: {} },
-			{ id: 23, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 0, gname: 'Larsen', pname: '인터페이스 다운' , box_info: {} },
-			{ id: 24, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 1, gname: 'Geneva', pname: '모든 인터페이스 다운' , box_info: {} },
-			{ id: 25, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 2, gname: 'Dickerson', pname: '모든 인터페이스 다운' , box_info: {} },
-			{ id: 26, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 3, gname: 'Larsen', pname: 'CPU 임계치 초과' , box_info: {} },
-			{ id: 27, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 4, gname: 'Geneva', pname: 'Memory 임계치 초과' , box_info: {} },
-			{ id: 28, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 5, gname: 'Dickerson', pname: 'Session 임계치 초과' , box_info: {} },
-			{ id: 29, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 6, gname: 'Larsen', pname: '입력 트래픽 임계치 초과' , box_info: {} },
-			{ id: 30, status_text: "발생", status: 3, sdate: '2020-02-05', odate: '2020-02-05', code: 7, gname: 'Geneva', pname: '출력 트래픽 임계치 초과' , box_info: {} },
-			{ id: 31, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 8, gname: 'Dickerson', pname: '동작환경 검사' , box_info: {} },
-			{ id: 32, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 9, gname: 'Larsen', pname: '터널 백업 설정' , box_info: {} },
-			{ id: 33, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 10, gname: 'Geneva', pname: '포트 다운' , box_info: {} },
-			{ id: 34, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 0, gname: 'Dickerson', pname: '인터페이스 다운' , box_info: {} },
-			{ id: 35, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 1, gname: 'Larsen', pname: '모든 인터페이스 다운' , box_info: {} },
-			{ id: 36, status_text: "발생", status: 1, sdate: '2020-02-05', odate: '2020-02-05', code: 2, gname: 'Geneva', pname: '터널 다운' , box_info: {} },
-		],
+		a_items: [],
 
 		sel_mtime: 0,
 		mtime: [
@@ -450,8 +390,8 @@ export default {
 				const { scrollTop } = e.target;
 				const rows = Math.ceil(scrollTop / this.a_rowHeight);
 		
-				this.s_tart = rows + this.a_perPage > this.lists.length ?
-				this.lists.length - this.a_perPage: rows;
+				this.a_start = rows + this.a_perPage > this.datas.length ?
+				this.datas.length - this.a_perPage: rows;
 		
 				this.$nextTick(() => {
 					e.target.scrollTop = scrollTop;
@@ -471,6 +411,51 @@ export default {
 		},
 	},
 	created() {
+		this.a_items = [];
+		var len = 100;
+
+		for(var i = 0; i < len; i++) {
+			var obj = {};
+			var status_obj = {};
+			var alm_obj = {};
+
+			status_obj = this.alm_status[Math.floor((Math.random()*3))];
+			alm_obj = this.alm[Math.floor((Math.random()*10))];
+
+			obj.id = i;
+			obj.gname = "BOX" + (i);
+			obj.code = alm_obj.id;
+			obj.pname = alm_obj.text;
+			obj.status = status_obj.id;
+			obj.status_text = status_obj.text;
+			obj.sdate = "2020-02-05";
+			obj.odate = "2020-02-05";
+			obj.box_info = {
+				id: i%9,
+				bname: 'BOX' + (i%9),
+				model: new Array( 'Neobox M106a', 'Neobox X1b', 'Neobox M22' )[Math.floor((Math.random()*3))],
+				img: 'XIOS FW V2.1(r32473)',
+				ip: Math.floor((Math.random()*255)) + '.' + Math.floor((Math.random()*255)) + '.' + Math.floor((Math.random()*255)) + '.' + Math.floor((Math.random()*255)),
+				serial: 'M106-a-L1707-0110',
+				lan: '40.0.0.1',
+				time: '68일 0시간 27분 59초',
+				snmp_ver: '2c',
+				snmp_com: '68일 0시간 27분 59초',
+
+				pname: 'grp_2_grp',
+				bch: 'bch_2',
+				code: '-',
+				tel1: '-',
+				tel2: '-',
+				addr: '부산광역시 수영구 광안로49번길 74',
+				name: '-',
+				email: '-',
+				date: '2021-01-25 14:07:03',
+			};
+
+			this.a_items.push(obj);
+		}
+
 		this.datas = this.a_items;
 	},
 
