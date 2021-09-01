@@ -1,4 +1,4 @@
-# app-vuetify
+# boxstate-vuetify
 
 ## Project setup
 ```
