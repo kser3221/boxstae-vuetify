@@ -761,6 +761,9 @@ export default {
 
 						this.filterClick();
 					}
+				} else {
+					this.allList.status = true;
+					this.allList.icon = 'mdi-checkbox-blank-circle';
 				}
 			}
 		},
@@ -790,6 +793,9 @@ export default {
 
 						this.filterClick();
 					}
+				} else {
+					this.allList.status = true;
+					this.allList.icon = 'mdi-checkbox-blank-circle';
 				}
 			}
 		},
@@ -819,6 +825,9 @@ export default {
 
 						this.filterClick();
 					}
+				} else {
+					this.allList.status = true;
+					this.allList.icon = 'mdi-checkbox-blank-circle';
 				}
 			}
 		},
