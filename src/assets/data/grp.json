@@ -1,0 +1,6 @@
+{
+	"max_id": 3,
+	"s": { "id": 1, "bname": "site", "slave": 0, "pid": 0, "sdate": "2021-05-12", "week": false, "month": true },
+	"g": { "id": 2, "bname": "grp", "slave": 2, "pid": 1, "sdate": "2021-05-12", "week": false, "month": true },
+	"g": { "id": 3, "bname": "grp2", "slave": 1, "pid": 2, "sdate": "2021-05-12", "week": false, "month": true }
+}
