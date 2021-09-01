@@ -9,6 +9,7 @@
 
 		<v-row dense>
 			<v-col cols="12">
+				<div class="float_l">
 				<v-btn
 				  class="ma-2"
 				  outlined
@@ -45,11 +46,12 @@
 					<v-icon>{{ tunList.icon }}</v-icon>
 					터널장애
 				</v-btn>
+				</div>
 			</v-col>
 		</v-row>
 		<v-row class="minus-top-mg" dense>
 			<v-col cols="10">
-				<div class="advice">
+				<div class="advice float_l">
 				<label>검색 장비: 총 {{ lists.length }} 대</label>
 
 				<span>인터페이스상태-</span>
@@ -84,12 +86,14 @@
 				</div>
 			</v-col>
 			<v-col cols="2">
+				<div class="float_r">
 				<!--v-select class="select_150" v-model="selectedHeaders" :items="headers" multiple dense outlined return-object-->
 				<v-select class="select_150" v-model="selectedHeaders" :items="col_label" multiple dense outlined return-object>
 					<template v-slot:selection="{ item, index }">
 						<span v-if="index === 0" class="grey--text caption">컬럼편집</span>
 					</template>
 				</v-select>
+				</div>
 			</v-col>
 		</v-row>
 		<v-row class="minus-top-mg">
@@ -355,7 +359,7 @@ export default {
 
 		lists: [],
 		tmp_datas: [],
-		tmp_lists: Array.from({ length: 15000 }).map((v, k) => ({
+		tmp_lists: Array.from({ length: 80000 }).map((v, k) => ({
 			gname: `gName${k}`,
 			bname: `BOX${k}`,
 			gw_type: new Array( 'Neobox M106a', 'Neobox X1b', 'Neobox M22' )[Math.floor((Math.random()*3))],
@@ -858,7 +862,6 @@ export default {
 	display: inline-block;
 }
 .advice {
-	width: 100%;
 	font-size: 8pt;
 	font-weight: bold;
 	margin-top: 20px;
@@ -879,5 +882,11 @@ export default {
 }
 .minus-top-mg {
 	margin-top: -30px;
+}
+.float_l {
+	float: left;
+}
+.float_r {
+	float: right;
 }
 </style>

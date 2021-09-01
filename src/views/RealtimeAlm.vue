@@ -2,9 +2,9 @@
 	<div class="realtime_alm" id="alarmC">
 		<v-row dense>
 			<v-col cols="12">
-				알람 모니터
+				<label class="float_l">알람 모니터</label>
 
-				<div class="fr">
+				<div class="float_r">
 					<v-menu offset-y
 					  :close-on-content-click="false"
 					  v-model="amenu"
@@ -508,7 +508,10 @@ export default {
 .v-data-table /deep/ .v-data-table__wrapper {
   overflow: unset;
 }
-.fr {
+.float_l {
+	float: left;
+}
+.float_r {
 	float: right;
 }
 .p_15 {
